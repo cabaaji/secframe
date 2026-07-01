@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAPM (PMI) — SecFrame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <button class="menu-toggle">☰ Menu</button>
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="glyph">&gt;_</div>
+      <div class="brand-text">
+        <div class="name">SecFrame</div>
+        <div class="tag">GOUVERNANCE &amp; SÉCURITÉ</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Accueil</div>
+      <a class="nav-link" href="../index.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M9 20v-6h6v6"/></svg>
+        Tableau de bord
+      </a>
+
+      <div class="sidebar-section-label">Ressources</div>
+      <a class="nav-link" href="cobit.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+        COBIT 2019
+        <span class="code">GOV</span>
+      </a>
+      <a class="nav-link" href="iso27001.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9.5 12 2 2 4-4"/></svg>
+        ISO/IEC 27001
+        <span class="code">SEC</span>
+      </a>
+      <a class="nav-link active" href="capm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="1.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+        CAPM (PMI)
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="prince2.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/></svg>
+        PRINCE2
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="ebios-rm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+        EBIOS RM
+        <span class="code">RISK</span>
+      </a>
+      <a class="nav-link" href="mitre-attack.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2"/></svg>
+        MITRE ATT&amp;CK
+        <span class="code">CTI</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="dot"></span> Base documentaire locale
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="breadcrumb"><a href="../index.html">SECFRAME</a> / RESSOURCES / CAPM</div>
+    <span class="badge">◆ GESTION DE PROJET</span>
+    <div class="page-header">
+      <h1>CAPM — Certified Associate in Project Management (PMI)</h1>
+      <p class="subtitle">Certification d'entrée du PMI basée sur le PMBOK Guide — 5 groupes de processus croisés avec 10 domaines de connaissance.</p>
+    </div>
+
+    <div class="lede">
+      Le PMBOK décrit un projet comme une succession de <strong>groupes de processus</strong> (pas des phases
+      figées : ils se chevauchent et se répètent), chacun mobilisant tout ou partie des
+      <strong>10 domaines de connaissance</strong> (scope, délais, coûts, qualité, risques...). Le
+      Monitoring &amp; Controlling s'exerce en continu, du démarrage à la clôture.
+    </div>
+
+    <div class="section">
+      <h2><span class="num">1</span> Vue d'ensemble</h2>
+      <p class="section-desc">Les 5 groupes de processus du cycle de vie projet :</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Groupe de processus</th><th>Objectif</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Démarrage (Initiating)</strong></td><td>Autoriser le projet ou une phase, produire la charte de projet, identifier les parties prenantes.</td></tr>
+            <tr><td><strong>Planification (Planning)</strong></td><td>Définir le périmètre, affiner les objectifs, construire le plan de management de projet.</td></tr>
+            <tr><td><strong>Exécution (Executing)</strong></td><td>Réaliser les travaux définis dans le plan pour satisfaire les exigences du projet.</td></tr>
+            <tr><td><strong>Surveillance &amp; Maîtrise (M&amp;C)</strong></td><td>Suivre, revoir et réguler l'avancement et la performance ; identifier les écarts et ajuster.</td></tr>
+            <tr><td><strong>Clôture (Closing)</strong></td><td>Finaliser toutes les activités, clore les contrats, capitaliser les enseignements.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">2</span> Schéma du référentiel</h2>
+      <p class="section-desc">Enchaînement des groupes de processus dans le temps, avec la maîtrise continue et les 10 domaines de connaissance mobilisés.</p>
+
+      <div class="diagram-frame">
+        <svg viewBox="0 0 940 460" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#4d5666"/>
+            </marker>
+            <marker id="arrow3A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#35c7c1"/>
+            </marker>
+          </defs>
+
+          <text x="40" y="30" class="d-label">Intensité de l'activité dans le temps →</text>
+
+          <!-- process group boxes along a timeline -->
+          <rect x="40" y="50" width="150" height="90" rx="8" class="d-box-accent"/>
+          <text x="55" y="78" class="d-text-strong">Démarrage</text>
+          <text x="55" y="98" class="d-text">Charte projet</text>
+          <text x="55" y="114" class="d-text">Parties prenantes</text>
+
+          <rect x="220" y="50" width="180" height="90" rx="8" class="d-box"/>
+          <text x="235" y="78" class="d-text-strong">Planification</text>
+          <text x="235" y="98" class="d-text">Scope, WBS, planning,</text>
+          <text x="235" y="114" class="d-text">budget, risques, qualité</text>
+
+          <rect x="430" y="50" width="180" height="90" rx="8" class="d-box"/>
+          <text x="445" y="78" class="d-text-strong">Exécution</text>
+          <text x="445" y="98" class="d-text">Production des livrables,</text>
+          <text x="445" y="114" class="d-text">gestion d'équipe</text>
+
+          <rect x="640" y="50" width="150" height="90" rx="8" class="d-box-accent"/>
+          <text x="655" y="78" class="d-text-strong">Clôture</text>
+          <text x="655" y="98" class="d-text">Acceptation finale</text>
+          <text x="655" y="114" class="d-text">Retour d'expérience</text>
+
+          <line x1="190" y1="95" x2="218" y2="95" class="d-arrow" marker-end="url(#arrow3)"/>
+          <line x1="400" y1="95" x2="428" y2="95" class="d-arrow" marker-end="url(#arrow3)"/>
+          <line x1="610" y1="95" x2="638" y2="95" class="d-arrow" marker-end="url(#arrow3)"/>
+
+          <!-- iteration loop between planning & executing -->
+          <path d="M 400 145 C 400 170, 220 170, 220 145" class="d-arrow-accent" marker-end="url(#arrow3A)" fill="none"/>
+          <text x="235" y="185" class="d-label">itérations planification ↔ exécution</text>
+
+          <!-- monitoring & controlling band -->
+          <rect x="220" y="205" width="570" height="50" rx="8" class="d-box-accent"/>
+          <text x="240" y="235" class="d-text-strong">Surveillance &amp; Maîtrise (M&amp;C) — continue sur toute la durée</text>
+          <path d="M 300 205 L 300 140" class="d-arrow" fill="none" stroke-dasharray="3 3"/>
+          <path d="M 520 205 L 520 140" class="d-arrow" fill="none" stroke-dasharray="3 3"/>
+          <path d="M 700 205 L 700 140" class="d-arrow" fill="none" stroke-dasharray="3 3"/>
+
+          <!-- 10 knowledge areas -->
+          <text x="40" y="295" class="d-label">10 domaines de connaissance mobilisés à chaque groupe de processus</text>
+          <g>
+            <rect x="40" y="308" width="170" height="36" rx="6" class="d-box"/><text x="52" y="330" class="d-text">Intégration</text>
+            <rect x="220" y="308" width="170" height="36" rx="6" class="d-box"/><text x="232" y="330" class="d-text">Contenu (Scope)</text>
+            <rect x="400" y="308" width="170" height="36" rx="6" class="d-box"/><text x="412" y="330" class="d-text">Délais</text>
+            <rect x="580" y="308" width="170" height="36" rx="6" class="d-box"/><text x="592" y="330" class="d-text">Coûts</text>
+            <rect x="760" y="308" width="140" height="36" rx="6" class="d-box"/><text x="772" y="330" class="d-text">Qualité</text>
+
+            <rect x="40" y="352" width="170" height="36" rx="6" class="d-box"/><text x="52" y="374" class="d-text">Ressources</text>
+            <rect x="220" y="352" width="170" height="36" rx="6" class="d-box"/><text x="232" y="374" class="d-text">Communication</text>
+            <rect x="400" y="352" width="170" height="36" rx="6" class="d-box"/><text x="412" y="374" class="d-text">Risques</text>
+            <rect x="580" y="352" width="170" height="36" rx="6" class="d-box"/><text x="592" y="374" class="d-text">Approvisionnement</text>
+            <rect x="760" y="352" width="140" height="36" rx="6" class="d-box"/><text x="772" y="374" class="d-text">Parties prenantes</text>
+          </g>
+        </svg>
+      </div>
+      <div class="diagram-caption">5 groupes de processus × 10 domaines de connaissance (matrice PMBOK)</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span> Comment suivre la méthodologie</h2>
+      <p class="section-desc">Déroulé pratique d'un projet selon le PMBOK.</p>
+      <ol class="steps">
+        <li>
+          <h3>Démarrer le projet</h3>
+          <p>Rédiger la charte de projet (objectifs, justification, contraintes), identifier et analyser les parties prenantes.</p>
+        </li>
+        <li>
+          <h3>Planifier le contenu et les livrables</h3>
+          <p>Recueillir les exigences, définir le périmètre, construire la structure de découpage du projet (WBS).</p>
+        </li>
+        <li>
+          <h3>Planifier délais, coûts et ressources</h3>
+          <p>Séquencer les activités, estimer les durées et les coûts, établir le budget et le planning de référence.</p>
+        </li>
+        <li>
+          <h3>Planifier qualité, risques et achats</h3>
+          <p>Définir les critères de qualité, identifier et analyser les risques, préparer les plans d'approvisionnement et de communication.</p>
+        </li>
+        <li>
+          <h3>Exécuter les travaux</h3>
+          <p>Diriger l'équipe, produire les livrables, gérer les achats et l'engagement des parties prenantes selon le plan.</p>
+        </li>
+        <li>
+          <h3>Surveiller et maîtriser en continu</h3>
+          <p>Comparer l'avancement réel au plan de référence (délai, coût, périmètre), traiter les écarts, gérer les demandes de changement.</p>
+        </li>
+        <li>
+          <h3>Clore le projet ou la phase</h3>
+          <p>Faire valider les livrables, clôturer les contrats, documenter les leçons apprises et libérer les ressources.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span> Points clés à retenir</h2>
+      <div class="box key">
+        <h4>À appliquer</h4>
+        <ul>
+          <li>Les groupes de processus ne sont pas des phases séquentielles : ils se chevauchent et se répètent, en particulier planification et exécution.</li>
+          <li>La Surveillance &amp; Maîtrise s'exerce du premier au dernier jour du projet, pas seulement en fin de parcours.</li>
+          <li>Le triangle contenu / délai / coût reste la référence pour arbitrer toute demande de changement.</li>
+          <li>Le CAPM valide la connaissance du vocabulaire et des processus PMBOK, prérequis avant le PMP.</li>
+        </ul>
+      </div>
+      <div class="chips">
+        <span class="chip">PMI</span>
+        <span class="chip">PMBOK Guide</span>
+        <span class="chip">5 groupes de processus</span>
+        <span class="chip">10 domaines de connaissance</span>
+      </div>
+    </div>
+
+    <div class="page-footer-nav">
+      <a href="iso27001.html">← ISO/IEC 27001</a>
+      <a href="prince2.html">PRINCE2 →</a>
+    </div>
+  </main>
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

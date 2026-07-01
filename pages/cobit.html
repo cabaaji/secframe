@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COBIT 2019 — SecFrame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <button class="menu-toggle">☰ Menu</button>
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="glyph">&gt;_</div>
+      <div class="brand-text">
+        <div class="name">SecFrame</div>
+        <div class="tag">GOUVERNANCE &amp; SÉCURITÉ</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Accueil</div>
+      <a class="nav-link" href="../index.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M9 20v-6h6v6"/></svg>
+        Tableau de bord
+      </a>
+
+      <div class="sidebar-section-label">Ressources</div>
+      <a class="nav-link active" href="cobit.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+        COBIT 2019
+        <span class="code">GOV</span>
+      </a>
+      <a class="nav-link" href="iso27001.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9.5 12 2 2 4-4"/></svg>
+        ISO/IEC 27001
+        <span class="code">SEC</span>
+      </a>
+      <a class="nav-link" href="capm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="1.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+        CAPM (PMI)
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="prince2.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/></svg>
+        PRINCE2
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="ebios-rm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+        EBIOS RM
+        <span class="code">RISK</span>
+      </a>
+      <a class="nav-link" href="mitre-attack.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2"/></svg>
+        MITRE ATT&amp;CK
+        <span class="code">CTI</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="dot"></span> Base documentaire locale
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="breadcrumb"><a href="../index.html">SECFRAME</a> / RESSOURCES / COBIT 2019</div>
+    <span class="badge">◆ GOUVERNANCE IT</span>
+    <div class="page-header">
+      <h1>COBIT 2019</h1>
+      <p class="subtitle">Control Objectives for Information and related Technologies — cadre de référence de l'ISACA pour la gouvernance et le management de l'IT d'entreprise.</p>
+    </div>
+
+    <div class="lede">
+      COBIT distingue clairement <strong>gouvernance</strong> (le conseil d'administration/direction fixe le cap,
+      évalue et surveille) et <strong>management</strong> (les équipes planifient, construisent, livrent et
+      surveillent l'exécution). Le référentiel fournit 40 objectifs organisés en 5 domaines, que chaque
+      organisation adapte à son contexte plutôt que d'appliquer intégralement.
+    </div>
+
+    <div class="section">
+      <h2><span class="num">1</span> Vue d'ensemble</h2>
+      <p class="section-desc">COBIT 2019 repose sur 5 principes qui cadrent tout le système de gouvernance :</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Principe</th><th>Ce qu'il signifie</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1. Répondre aux besoins des parties prenantes</strong></td><td>La gouvernance transforme les besoins des parties prenantes en objectifs d'entreprise, puis en objectifs IT concrets.</td></tr>
+            <tr><td><strong>2. Couverture globale de l'entreprise</strong></td><td>La gouvernance IT s'intègre à la gouvernance globale, elle ne se limite pas au seul département informatique.</td></tr>
+            <tr><td><strong>3. Système de gouvernance dynamique</strong></td><td>Le système s'ajuste en continu en fonction des facteurs de conception (risques, stratégie, taille, menaces).</td></tr>
+            <tr><td><strong>4. Gouvernance distincte du management</strong></td><td>Le conseil évalue, dirige et surveille (EDM) ; le management planifie, construit, exécute et surveille l'exploitation.</td></tr>
+            <tr><td><strong>5. Adapté aux besoins de l'entreprise</strong></td><td>Le référentiel se personnalise (« tailoring ») : toutes les organisations ne priorisent pas les mêmes objectifs.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">2</span> Schéma du référentiel</h2>
+      <p class="section-desc">Structure des 5 domaines et des 40 objectifs de gouvernance/management, avec la boucle de pilotage.</p>
+
+      <div class="diagram-frame">
+        <svg viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#4d5666"/>
+            </marker>
+            <marker id="arrowA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#35c7c1"/>
+            </marker>
+          </defs>
+
+          <!-- Governance layer -->
+          <rect x="40" y="20" width="840" height="80" rx="8" class="d-box-accent"/>
+          <text x="60" y="45" class="d-label">Gouvernance — conseil / direction</text>
+          <text x="60" y="68" class="d-text-strong">EDM — Evaluate, Direct and Monitor</text>
+          <text x="60" y="86" class="d-text">5 objectifs : EDM01 Cadre de gouvernance · EDM02 Bénéfices · EDM03 Risques · EDM04 Ressources · EDM05 Parties prenantes</text>
+
+          <line x1="460" y1="100" x2="460" y2="132" class="d-arrow-accent" marker-end="url(#arrowA)"/>
+
+          <!-- Management layer label -->
+          <text x="60" y="128" class="d-label">Management — direction opérationnelle</text>
+
+          <!-- APO -->
+          <rect x="40" y="150" width="190" height="110" rx="8" class="d-box"/>
+          <text x="56" y="174" class="d-text-mono">APO · 14 objectifs</text>
+          <text x="56" y="196" class="d-text-strong">Align, Plan, Organize</text>
+          <text x="56" y="216" class="d-text">Stratégie, architecture,</text>
+          <text x="56" y="232" class="d-text">risques, budget, RH,</text>
+          <text x="56" y="248" class="d-text">relations fournisseurs</text>
+
+          <!-- BAI -->
+          <rect x="250" y="150" width="190" height="110" rx="8" class="d-box"/>
+          <text x="266" y="174" class="d-text-mono">BAI · 11 objectifs</text>
+          <text x="266" y="196" class="d-text-strong">Build, Acquire, Implement</text>
+          <text x="266" y="216" class="d-text">Programmes, projets,</text>
+          <text x="266" y="232" class="d-text">solutions, changements,</text>
+          <text x="266" y="248" class="d-text">connaissances, actifs</text>
+
+          <!-- DSS -->
+          <rect x="460" y="150" width="190" height="110" rx="8" class="d-box"/>
+          <text x="476" y="174" class="d-text-mono">DSS · 6 objectifs</text>
+          <text x="476" y="196" class="d-text-strong">Deliver, Service, Support</text>
+          <text x="476" y="216" class="d-text">Exploitation, incidents,</text>
+          <text x="476" y="232" class="d-text">continuité, sécurité,</text>
+          <text x="476" y="248" class="d-text">contrôles applicatifs</text>
+
+          <!-- MEA -->
+          <rect x="670" y="150" width="210" height="110" rx="8" class="d-box"/>
+          <text x="686" y="174" class="d-text-mono">MEA · 4 objectifs</text>
+          <text x="686" y="196" class="d-text-strong">Monitor, Evaluate, Assess</text>
+          <text x="686" y="216" class="d-text">Performance, contrôle</text>
+          <text x="686" y="232" class="d-text">interne, conformité</text>
+          <text x="686" y="248" class="d-text">réglementaire</text>
+
+          <!-- arrows between domains -->
+          <line x1="230" y1="205" x2="248" y2="205" class="d-arrow" marker-end="url(#arrow)"/>
+          <line x1="440" y1="205" x2="458" y2="205" class="d-arrow" marker-end="url(#arrow)"/>
+          <line x1="650" y1="205" x2="668" y2="205" class="d-arrow" marker-end="url(#arrow)"/>
+
+          <!-- feedback loop MEA -> EDM -->
+          <path d="M 880 150 C 900 90, 900 40, 884 20" class="d-arrow-accent" marker-end="url(#arrowA)" fill="none"/>
+          <text x="885" y="100" class="d-label" transform="rotate(90 885 100)">Feedback continu</text>
+
+          <!-- feedback loop bottom MEA -> APO -->
+          <path d="M 775 260 C 775 320, 130 320, 130 262" class="d-arrow" marker-end="url(#arrow)" fill="none"/>
+          <text x="380" y="340" class="d-label">Amélioration continue du système de gouvernance</text>
+
+          <!-- capability level bar -->
+          <rect x="40" y="380" width="840" height="60" rx="8" class="d-box"/>
+          <text x="60" y="402" class="d-label">Mesure de maturité (par objectif, sur 5 niveaux)</text>
+          <text x="60" y="424" class="d-text">0 Incomplet → 1 Réalisé → 2 Géré → 3 Établi → 4 Prévisible → 5 Optimisé</text>
+        </svg>
+      </div>
+      <div class="diagram-caption">40 objectifs de gouvernance/management répartis en 5 domaines (EDM · APO · BAI · DSS · MEA)</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span> Comment suivre la méthodologie</h2>
+      <p class="section-desc">Cycle de vie d'implémentation COBIT en 7 phases (approche itérative, à ne pas dérouler seulement une fois).</p>
+      <ol class="steps">
+        <li>
+          <h3>Quels sont les moteurs du changement ?</h3>
+          <p>Identifier les événements déclencheurs : incident, audit, changement réglementaire, fusion, nouvelle stratégie IT. Obtenir le sponsoring de la direction.</p>
+        </li>
+        <li>
+          <h3>Où en sommes-nous ?</h3>
+          <p>Évaluer l'état actuel de la gouvernance IT : cartographier les objectifs COBIT déjà couverts et leur niveau de capacité (0 à 5).</p>
+        </li>
+        <li>
+          <h3>Où voulons-nous être ?</h3>
+          <p>Définir la cible à partir des <em>design factors</em> (stratégie d'entreprise, profil de risque, taille, rôle de l'IT, menaces) : quels objectifs prioriser, quel niveau de capacité viser.</p>
+        </li>
+        <li>
+          <h3>Que faut-il faire ?</h3>
+          <p>Construire le plan de transformation : écarts à combler, actions, responsables, quick wins et initiatives structurantes.</p>
+        </li>
+        <li>
+          <h3>Comment y parvenir ?</h3>
+          <p>Exécuter le plan : mettre en œuvre les processus, pratiques et activités des objectifs retenus, avec un pilotage de projet classique.</p>
+        </li>
+        <li>
+          <h3>Sommes-nous arrivés ?</h3>
+          <p>Vérifier l'atteinte des objectifs via les métriques de performance et de conformité définies dans EDM et MEA.</p>
+        </li>
+        <li>
+          <h3>Comment maintenir la dynamique ?</h3>
+          <p>Ancrer la gouvernance dans le fonctionnement courant, communiquer les résultats, relancer un nouveau cycle sur les objectifs suivants.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span> Points clés à retenir</h2>
+      <div class="box key">
+        <h4>À appliquer</h4>
+        <ul>
+          <li>Ne jamais implémenter les 40 objectifs d'un coup : utiliser les facteurs de conception pour prioriser.</li>
+          <li>Toujours séparer les décisions de gouvernance (EDM) des activités de management (APO/BAI/DSS/MEA).</li>
+          <li>Utiliser les niveaux de capacité (0-5) pour objectiver la maturité plutôt qu'une évaluation qualitative.</li>
+          <li>Traiter le cycle de vie d'implémentation comme itératif : chaque tour de boucle traite un sous-ensemble d'objectifs.</li>
+        </ul>
+      </div>
+      <div class="chips">
+        <span class="chip">ISACA</span>
+        <span class="chip">Gouvernance IT</span>
+        <span class="chip">40 objectifs</span>
+        <span class="chip">Complémentaire à ISO 27001 / ITIL</span>
+      </div>
+    </div>
+
+    <div class="page-footer-nav">
+      <a href="../index.html">← Accueil</a>
+      <a href="iso27001.html">ISO/IEC 27001 →</a>
+    </div>
+  </main>
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

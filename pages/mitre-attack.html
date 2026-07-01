@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MITRE ATT&amp;CK — SecFrame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <button class="menu-toggle">☰ Menu</button>
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="glyph">&gt;_</div>
+      <div class="brand-text">
+        <div class="name">SecFrame</div>
+        <div class="tag">GOUVERNANCE &amp; SÉCURITÉ</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Accueil</div>
+      <a class="nav-link" href="../index.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M9 20v-6h6v6"/></svg>
+        Tableau de bord
+      </a>
+
+      <div class="sidebar-section-label">Ressources</div>
+      <a class="nav-link" href="cobit.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+        COBIT 2019
+        <span class="code">GOV</span>
+      </a>
+      <a class="nav-link" href="iso27001.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9.5 12 2 2 4-4"/></svg>
+        ISO/IEC 27001
+        <span class="code">SEC</span>
+      </a>
+      <a class="nav-link" href="capm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="1.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+        CAPM (PMI)
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="prince2.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/></svg>
+        PRINCE2
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="ebios-rm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+        EBIOS RM
+        <span class="code">RISK</span>
+      </a>
+      <a class="nav-link active" href="mitre-attack.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2"/></svg>
+        MITRE ATT&amp;CK
+        <span class="code">CTI</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="dot"></span> Base documentaire locale
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="breadcrumb"><a href="../index.html">SECFRAME</a> / RESSOURCES / MITRE ATT&amp;CK</div>
+    <span class="badge">◆ THREAT INTELLIGENCE</span>
+    <div class="page-header">
+      <h1>MITRE ATT&amp;CK</h1>
+      <p class="subtitle">Base de connaissances des tactiques, techniques et procédures (TTP) d'attaquants observées en conditions réelles — matrice Enterprise à 14 tactiques.</p>
+    </div>
+
+    <div class="lede">
+      ATT&amp;CK n'est pas une méthode de gestion de projet mais un <strong>langage commun</strong> pour décrire
+      le comportement d'un attaquant : la <em>tactique</em> est son objectif immédiat (« pourquoi »), la
+      <em>technique</em> (et sa sous-technique) décrit « comment », et la <em>procédure</em> est la mise en
+      œuvre concrète observée chez un groupe d'attaquants précis.
+    </div>
+
+    <div class="section">
+      <h2><span class="num">1</span> Vue d'ensemble</h2>
+      <p class="section-desc">Hiérarchie des objets ATT&amp;CK :</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Niveau</th><th>Question</th><th>Exemple</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Tactique</strong></td><td>Pourquoi cette action ?</td><td>Accès initial</td></tr>
+            <tr><td><strong>Technique</strong></td><td>Comment l'attaquant procède ?</td><td>Hameçonnage (Phishing)</td></tr>
+            <tr><td><strong>Sous-technique</strong></td><td>Quelle variante précise ?</td><td>Pièce jointe piégée (Spearphishing Attachment)</td></tr>
+            <tr><td><strong>Procédure</strong></td><td>Comment un groupe l'a implémentée ?</td><td>Document Office macro observé chez APT29</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--text-muted); font-size:14px; margin-top:8px;">
+        ATT&amp;CK couvre plusieurs matrices (Enterprise, Mobile, ICS) ; la matrice Enterprise ci-dessous
+        est la plus utilisée en défense d'entreprise.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">2</span> Schéma du référentiel</h2>
+      <p class="section-desc">Les 14 tactiques de la matrice Enterprise, dans leur ordre de progression logique d'une intrusion, avec un exemple de technique par tactique.</p>
+
+      <div class="diagram-frame">
+        <svg viewBox="0 0 980 340" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#4d5666"/>
+            </marker>
+          </defs>
+
+          <text x="20" y="20" class="d-label">Row 1 — reconnaissance → mouvement initial</text>
+          <!-- Row 1: 7 tactics -->
+          <g>
+            <rect x="20" y="30" width="128" height="92" rx="6" class="d-box-accent"/>
+            <text x="30" y="50" class="d-text-mono">01</text>
+            <text x="30" y="70" class="d-text-strong">Reconnaissance</text>
+            <text x="30" y="98" class="d-text">Scan actif, OSINT</text>
+
+            <rect x="156" y="30" width="128" height="92" rx="6" class="d-box-accent"/>
+            <text x="166" y="50" class="d-text-mono">02</text>
+            <text x="166" y="70" class="d-text-strong">Dév. de ressources</text>
+            <text x="166" y="98" class="d-text">Achat d'infra C2</text>
+
+            <rect x="292" y="30" width="128" height="92" rx="6" class="d-box-accent"/>
+            <text x="302" y="50" class="d-text-mono">03</text>
+            <text x="302" y="70" class="d-text-strong">Accès initial</text>
+            <text x="302" y="98" class="d-text">Hameçonnage</text>
+
+            <rect x="428" y="30" width="128" height="92" rx="6" class="d-box"/>
+            <text x="438" y="50" class="d-text-mono">04</text>
+            <text x="438" y="70" class="d-text-strong">Exécution</text>
+            <text x="438" y="98" class="d-text">PowerShell</text>
+
+            <rect x="564" y="30" width="128" height="92" rx="6" class="d-box"/>
+            <text x="574" y="50" class="d-text-mono">05</text>
+            <text x="574" y="70" class="d-text-strong">Persistance</text>
+            <text x="574" y="98" class="d-text">Clé de registre</text>
+
+            <rect x="700" y="30" width="128" height="92" rx="6" class="d-box"/>
+            <text x="710" y="50" class="d-text-mono">06</text>
+            <text x="710" y="70" class="d-text-strong">Élévation de</text>
+            <text x="710" y="86" class="d-text-strong">privilèges</text>
+            <text x="710" y="106" class="d-text">Exploit local</text>
+
+            <rect x="836" y="30" width="124" height="92" rx="6" class="d-box"/>
+            <text x="846" y="50" class="d-text-mono">07</text>
+            <text x="846" y="70" class="d-text-strong">Évasion défensive</text>
+            <text x="846" y="98" class="d-text">Obfuscation</text>
+          </g>
+
+          <line x1="148" y1="76" x2="154" y2="76" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="284" y1="76" x2="290" y2="76" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="420" y1="76" x2="426" y2="76" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="556" y1="76" x2="562" y2="76" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="692" y1="76" x2="698" y2="76" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="828" y1="76" x2="834" y2="76" class="d-arrow" marker-end="url(#arrow6)"/>
+
+          <text x="20" y="152" class="d-label">Row 2 — persistance interne → objectif final</text>
+          <!-- Row 2: 7 tactics -->
+          <g>
+            <rect x="20" y="162" width="128" height="92" rx="6" class="d-box"/>
+            <text x="30" y="182" class="d-text-mono">08</text>
+            <text x="30" y="202" class="d-text-strong">Accès aux</text>
+            <text x="30" y="218" class="d-text-strong">identifiants</text>
+            <text x="30" y="238" class="d-text">Dump LSASS</text>
+
+            <rect x="156" y="162" width="128" height="92" rx="6" class="d-box"/>
+            <text x="166" y="182" class="d-text-mono">09</text>
+            <text x="166" y="202" class="d-text-strong">Découverte</text>
+            <text x="166" y="230" class="d-text">Recon réseau interne</text>
+
+            <rect x="292" y="162" width="128" height="92" rx="6" class="d-box"/>
+            <text x="302" y="182" class="d-text-mono">10</text>
+            <text x="302" y="202" class="d-text-strong">Mouvement</text>
+            <text x="302" y="218" class="d-text-strong">latéral</text>
+            <text x="302" y="238" class="d-text">Pass-the-hash</text>
+
+            <rect x="428" y="162" width="128" height="92" rx="6" class="d-box"/>
+            <text x="438" y="182" class="d-text-mono">11</text>
+            <text x="438" y="202" class="d-text-strong">Collecte</text>
+            <text x="438" y="230" class="d-text">Capture d'écran</text>
+
+            <rect x="564" y="162" width="128" height="92" rx="6" class="d-box-danger"/>
+            <text x="574" y="182" class="d-text-mono">12</text>
+            <text x="574" y="202" class="d-text-strong">Commande &amp;</text>
+            <text x="574" y="218" class="d-text-strong">contrôle</text>
+            <text x="574" y="238" class="d-text">Canal C2 chiffré</text>
+
+            <rect x="700" y="162" width="128" height="92" rx="6" class="d-box-danger"/>
+            <text x="710" y="182" class="d-text-mono">13</text>
+            <text x="710" y="202" class="d-text-strong">Exfiltration</text>
+            <text x="710" y="230" class="d-text">Transfert vers cloud</text>
+
+            <rect x="836" y="162" width="124" height="92" rx="6" class="d-box-danger"/>
+            <text x="846" y="182" class="d-text-mono">14</text>
+            <text x="846" y="202" class="d-text-strong">Impact</text>
+            <text x="846" y="230" class="d-text">Chiffrement (ransomware)</text>
+          </g>
+
+          <line x1="148" y1="208" x2="154" y2="208" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="284" y1="208" x2="290" y2="208" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="420" y1="208" x2="426" y2="208" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="556" y1="208" x2="562" y2="208" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="692" y1="208" x2="698" y2="208" class="d-arrow" marker-end="url(#arrow6)"/>
+          <line x1="828" y1="208" x2="834" y2="208" class="d-arrow" marker-end="url(#arrow6)"/>
+          <path d="M 900 122 C 900 140, 900 145, 900 160" class="d-arrow" marker-end="url(#arrow6)" fill="none"/>
+
+          <text x="20" y="290" class="d-text">Chaque cellule d'une tactique regroupe en réalité plusieurs dizaines de techniques : la matrice ci-dessus n'affiche qu'un exemple représentatif par colonne.</text>
+          <text x="20" y="310" class="d-text">Une intrusion réelle ne suit pas nécessairement les 14 tactiques dans cet ordre — certaines sont répétées ou omises selon l'objectif de l'attaquant.</text>
+        </svg>
+      </div>
+      <div class="diagram-caption">14 tactiques de la matrice Enterprise ATT&amp;CK, avec un exemple de technique par tactique</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span> Comment suivre la méthodologie</h2>
+      <p class="section-desc">Démarche pour exploiter ATT&amp;CK en défense (threat intelligence, détection, red/purple teaming).</p>
+      <ol class="steps">
+        <li>
+          <h3>Définir le périmètre et les menaces pertinentes</h3>
+          <p>Identifier les groupes d'attaquants (APT) et les campagnes pertinentes pour votre secteur à partir de la threat intelligence disponible.</p>
+        </li>
+        <li>
+          <h3>Cartographier les TTP connus</h3>
+          <p>Associer chaque rapport de menace aux tactiques et techniques ATT&amp;CK correspondantes, à l'aide du site MITRE ou de l'outil ATT&amp;CK Navigator.</p>
+        </li>
+        <li>
+          <h3>Construire une heatmap de couverture</h3>
+          <p>Pour chaque technique jugée pertinente, indiquer si une détection ou une mesure de mitigation existe déjà, afin de visualiser les zones couvertes et les angles morts.</p>
+        </li>
+        <li>
+          <h3>Prioriser les efforts de détection</h3>
+          <p>Classer les techniques non couvertes selon leur probabilité d'usage et leur impact, puis prioriser l'écriture de règles de détection ou l'ajout de contrôles.</p>
+        </li>
+        <li>
+          <h3>Valider par l'émulation d'adversaire</h3>
+          <p>Tester les détections avec des scénarios d'attaque simulés (atomic tests, purple team) reproduisant les techniques ciblées.</p>
+        </li>
+        <li>
+          <h3>Mettre à jour en continu</h3>
+          <p>Réviser la heatmap à chaque nouvelle menace identifiée ou mise à jour de la matrice ATT&amp;CK, et suivre l'évolution de la couverture dans le temps.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span> Points clés à retenir</h2>
+      <div class="box key">
+        <h4>À appliquer</h4>
+        <ul>
+          <li>ATT&amp;CK décrit un comportement observé, pas un plan d'attaque figé : une même tactique peut être atteinte par des dizaines de techniques différentes.</li>
+          <li>La couverture de détection doit être mesurée technique par technique, pas seulement tactique par tactique.</li>
+          <li>ATT&amp;CK sert de langage commun entre threat intelligence, SOC et red team pour parler des mêmes comportements.</li>
+          <li>EBIOS RM (atelier 4) et ATT&amp;CK se complètent naturellement pour détailler des scénarios opérationnels réalistes.</li>
+        </ul>
+      </div>
+      <div class="chips">
+        <span class="chip">MITRE</span>
+        <span class="chip">Matrice Enterprise</span>
+        <span class="chip">14 tactiques</span>
+        <span class="chip">ATT&amp;CK Navigator</span>
+      </div>
+    </div>
+
+    <div class="page-footer-nav">
+      <a href="ebios-rm.html">← EBIOS RM</a>
+      <a href="../index.html">Retour à l'accueil →</a>
+    </div>
+  </main>
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EBIOS Risk Manager — SecFrame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <button class="menu-toggle">☰ Menu</button>
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="glyph">&gt;_</div>
+      <div class="brand-text">
+        <div class="name">SecFrame</div>
+        <div class="tag">GOUVERNANCE &amp; SÉCURITÉ</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Accueil</div>
+      <a class="nav-link" href="../index.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M9 20v-6h6v6"/></svg>
+        Tableau de bord
+      </a>
+
+      <div class="sidebar-section-label">Ressources</div>
+      <a class="nav-link" href="cobit.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+        COBIT 2019
+        <span class="code">GOV</span>
+      </a>
+      <a class="nav-link" href="iso27001.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9.5 12 2 2 4-4"/></svg>
+        ISO/IEC 27001
+        <span class="code">SEC</span>
+      </a>
+      <a class="nav-link" href="capm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="1.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+        CAPM (PMI)
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="prince2.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/></svg>
+        PRINCE2
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link active" href="ebios-rm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+        EBIOS RM
+        <span class="code">RISK</span>
+      </a>
+      <a class="nav-link" href="mitre-attack.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2"/></svg>
+        MITRE ATT&amp;CK
+        <span class="code">CTI</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="dot"></span> Base documentaire locale
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="breadcrumb"><a href="../index.html">SECFRAME</a> / RESSOURCES / EBIOS RM</div>
+    <span class="badge">◆ GESTION DES RISQUES CYBER</span>
+    <div class="page-header">
+      <h1>EBIOS Risk Manager</h1>
+      <p class="subtitle">Méthode française de l'ANSSI pour apprécier et traiter les risques numériques — 5 ateliers, d'une approche par conformité vers une approche par scénarios de menace.</p>
+    </div>
+
+    <div class="lede">
+      EBIOS RM combine deux logiques : une approche <strong>par conformité</strong> (socle de sécurité, référentiels
+      applicables) et une approche <strong>par scénarios</strong> (sources de risque, modes opératoires
+      d'attaque). Le résultat est une cartographie des risques numériques priorisée et un plan d'amélioration
+      continue de la sécurité (PACS).
+    </div>
+
+    <div class="section">
+      <h2><span class="num">1</span> Vue d'ensemble</h2>
+      <p class="section-desc">Concepts clés manipulés tout au long de la méthode :</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Notion</th><th>Définition</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Valeur métier</strong></td><td>Ce qui a de la valeur pour l'organisation (information, processus, savoir-faire).</td></tr>
+            <tr><td><strong>Événement redouté</strong></td><td>Impact potentiel sur une valeur métier (perte de confidentialité, de disponibilité...).</td></tr>
+            <tr><td><strong>Source de risque (SR)</strong></td><td>Ce qui peut être à l'origine du risque : un attaquant et sa motivation.</td></tr>
+            <tr><td><strong>Objectif visé (OV)</strong></td><td>Ce que la source de risque cherche à obtenir (sabotage, gain financier, espionnage).</td></tr>
+            <tr><td><strong>Scénario stratégique</strong></td><td>Chemin d'attaque de haut niveau, via l'écosystème, pour atteindre la valeur métier.</td></tr>
+            <tr><td><strong>Scénario opérationnel</strong></td><td>Mode opératoire technique détaillé, souvent décrit avec MITRE ATT&amp;CK.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">2</span> Schéma du référentiel</h2>
+      <p class="section-desc">Les 5 ateliers EBIOS RM et leur enchaînement, avec la boucle d'amélioration continue.</p>
+
+      <div class="diagram-frame">
+        <svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#4d5666"/>
+            </marker>
+            <marker id="arrow5A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#35c7c1"/>
+            </marker>
+          </defs>
+
+          <!-- Atelier 1 -->
+          <rect x="30" y="60" width="170" height="150" rx="8" class="d-box-accent"/>
+          <text x="45" y="84" class="d-text-mono">ATELIER 1</text>
+          <text x="45" y="106" class="d-text-strong">Cadrage &amp;</text>
+          <text x="45" y="122" class="d-text-strong">socle de sécurité</text>
+          <text x="45" y="146" class="d-text">Périmètre, valeurs</text>
+          <text x="45" y="162" class="d-text">métier, événements</text>
+          <text x="45" y="178" class="d-text">redoutés, écarts au</text>
+          <text x="45" y="194" class="d-text">socle réglementaire</text>
+
+          <!-- Atelier 2 -->
+          <rect x="220" y="60" width="170" height="150" rx="8" class="d-box"/>
+          <text x="235" y="84" class="d-text-mono">ATELIER 2</text>
+          <text x="235" y="106" class="d-text-strong">Sources de</text>
+          <text x="235" y="122" class="d-text-strong">risque</text>
+          <text x="235" y="146" class="d-text">Identifier SR/OV,</text>
+          <text x="235" y="162" class="d-text">évaluer et prioriser</text>
+          <text x="235" y="178" class="d-text">les couples les plus</text>
+          <text x="235" y="194" class="d-text">pertinents</text>
+
+          <!-- Atelier 3 -->
+          <rect x="410" y="60" width="170" height="150" rx="8" class="d-box"/>
+          <text x="425" y="84" class="d-text-mono">ATELIER 3</text>
+          <text x="425" y="106" class="d-text-strong">Scénarios</text>
+          <text x="425" y="122" class="d-text-strong">stratégiques</text>
+          <text x="425" y="146" class="d-text">Cartographie de</text>
+          <text x="425" y="162" class="d-text">l'écosystème, chemins</text>
+          <text x="425" y="178" class="d-text">d'attaque, mesures sur</text>
+          <text x="425" y="194" class="d-text">les parties prenantes</text>
+
+          <!-- Atelier 4 -->
+          <rect x="600" y="60" width="170" height="150" rx="8" class="d-box"/>
+          <text x="615" y="84" class="d-text-mono">ATELIER 4</text>
+          <text x="615" y="106" class="d-text-strong">Scénarios</text>
+          <text x="615" y="122" class="d-text-strong">opérationnels</text>
+          <text x="615" y="146" class="d-text">Modes opératoires</text>
+          <text x="615" y="162" class="d-text">techniques détaillés</text>
+          <text x="615" y="178" class="d-text">(réf. MITRE ATT&amp;CK),</text>
+          <text x="615" y="194" class="d-text">vraisemblance</text>
+
+          <!-- Atelier 5 -->
+          <rect x="760" y="60" width="170" height="150" rx="8" class="d-box-accent"/>
+          <text x="775" y="84" class="d-text-mono">ATELIER 5</text>
+          <text x="775" y="106" class="d-text-strong">Traitement</text>
+          <text x="775" y="122" class="d-text-strong">du risque</text>
+          <text x="775" y="146" class="d-text">Synthèse des risques,</text>
+          <text x="775" y="162" class="d-text">décision de traitement,</text>
+          <text x="775" y="178" class="d-text">plan d'amélioration</text>
+          <text x="775" y="194" class="d-text">continue (PACS)</text>
+
+          <line x1="200" y1="135" x2="218" y2="135" class="d-arrow" marker-end="url(#arrow5)"/>
+          <line x1="390" y1="135" x2="408" y2="135" class="d-arrow" marker-end="url(#arrow5)"/>
+          <line x1="580" y1="135" x2="598" y2="135" class="d-arrow" marker-end="url(#arrow5)"/>
+          <line x1="770" y1="135" x2="758" y2="135" class="d-arrow" marker-end="url(#arrow5)"/>
+
+          <!-- feedback loop -->
+          <path d="M 845 210 C 845 330, 115 330, 115 212" class="d-arrow-accent" marker-end="url(#arrow5A)" fill="none"/>
+          <text x="330" y="355" class="d-label">amélioration continue — le PACS alimente le socle de sécurité (atelier 1) du cycle suivant</text>
+        </svg>
+      </div>
+      <div class="diagram-caption">5 ateliers EBIOS RM (ANSSI), du cadrage au traitement du risque</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span> Comment suivre la méthodologie</h2>
+      <p class="section-desc">Déroulé atelier par atelier.</p>
+      <ol class="steps">
+        <li>
+          <h3>Atelier 1 — Cadrage et socle de sécurité</h3>
+          <p>Délimiter le périmètre de l'étude, lister les valeurs métier et biens supports, définir les événements redoutés et leur gravité, comparer l'existant au socle de sécurité (référentiels applicables) pour identifier les écarts.</p>
+        </li>
+        <li>
+          <h3>Atelier 2 — Sources de risque</h3>
+          <p>Établir la liste des sources de risque possibles et de leurs objectifs visés, puis évaluer la pertinence de chaque couple SR/OV pour ne retenir que les plus critiques.</p>
+        </li>
+        <li>
+          <h3>Atelier 3 — Scénarios stratégiques</h3>
+          <p>Cartographier l'écosystème (partenaires, prestataires, fournisseurs), construire des scénarios stratégiques reliant les sources de risque retenues aux valeurs métier, et définir des mesures de sécurité sur l'écosystème.</p>
+        </li>
+        <li>
+          <h3>Atelier 4 — Scénarios opérationnels</h3>
+          <p>Détailler techniquement chaque scénario stratégique retenu (mode opératoire, souvent aligné sur les tactiques/techniques MITRE ATT&amp;CK), puis évaluer sa vraisemblance.</p>
+        </li>
+        <li>
+          <h3>Atelier 5 — Traitement du risque</h3>
+          <p>Consolider l'ensemble des risques évalués, décider d'un traitement (réduire, éviter, transférer, accepter), et formaliser le plan d'amélioration continue de la sécurité (PACS) avec son suivi.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span> Points clés à retenir</h2>
+      <div class="box key">
+        <h4>À appliquer</h4>
+        <ul>
+          <li>EBIOS RM n'est pas linéaire : les ateliers 3 et 4 s'affinent souvent par itérations successives.</li>
+          <li>Seuls les couples source de risque / objectif visé les plus pertinents sont approfondis — l'exhaustivité n'est pas l'objectif.</li>
+          <li>L'atelier 4 s'articule naturellement avec MITRE ATT&amp;CK pour décrire des modes opératoires réalistes.</li>
+          <li>Le PACS doit être piloté dans la durée : EBIOS RM est un cycle réitéré, pas un livrable figé.</li>
+        </ul>
+      </div>
+      <div class="chips">
+        <span class="chip">ANSSI</span>
+        <span class="chip">Club EBIOS</span>
+        <span class="chip">5 ateliers</span>
+        <span class="chip">Complémentaire à ISO 27005 / MITRE ATT&amp;CK</span>
+      </div>
+    </div>
+
+    <div class="page-footer-nav">
+      <a href="prince2.html">← PRINCE2</a>
+      <a href="mitre-attack.html">MITRE ATT&amp;CK →</a>
+    </div>
+  </main>
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

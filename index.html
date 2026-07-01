@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecFrame — Référentiel des méthodologies cybersécurité &amp; gouvernance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <button class="menu-toggle">☰ Menu</button>
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="glyph">&gt;_</div>
+      <div class="brand-text">
+        <div class="name">SecFrame</div>
+        <div class="tag">GOUVERNANCE &amp; SÉCURITÉ</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Accueil</div>
+      <a class="nav-link active" href="index.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M9 20v-6h6v6"/></svg>
+        Tableau de bord
+      </a>
+
+      <div class="sidebar-section-label">Ressources</div>
+      <a class="nav-link" href="pages/cobit.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+        COBIT 2019
+        <span class="code">GOV</span>
+      </a>
+      <a class="nav-link" href="pages/iso27001.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9.5 12 2 2 4-4"/></svg>
+        ISO/IEC 27001
+        <span class="code">SEC</span>
+      </a>
+      <a class="nav-link" href="pages/capm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="1.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+        CAPM (PMI)
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="pages/prince2.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h13l-3 4 3 4H5"/></svg>
+        PRINCE2
+        <span class="code">PM</span>
+      </a>
+      <a class="nav-link" href="pages/ebios-rm.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+        EBIOS RM
+        <span class="code">RISK</span>
+      </a>
+      <a class="nav-link" href="pages/mitre-attack.html">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2"/></svg>
+        MITRE ATT&amp;CK
+        <span class="code">CTI</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="dot"></span> Base documentaire locale
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="breadcrumb">SECFRAME / ACCUEIL</div>
+    <span class="badge">◆ RÉFÉRENTIEL MÉTHODOLOGIQUE</span>
+    <div class="page-header">
+      <h1>Gouvernance, sécurité &amp; gestion de projet</h1>
+      <p class="subtitle">Six méthodologies de référence, expliquées avec un schéma complet et une lecture pas-à-pas pour les mettre en œuvre concrètement.</p>
+    </div>
+
+    <p style="color:var(--text-muted); max-width:680px; margin-top:20px; font-size:14.6px;">
+      Ce site sert de mémo pratique pour les référentiels les plus utilisés en gouvernance IT,
+      sécurité de l'information, gestion de projet et cyberdéfense. Chaque fiche présente le cadre
+      dans son ensemble, un schéma synthétique, puis une méthode de lecture séquentielle pour
+      appliquer la démarche sur un projet réel.
+    </p>
+
+    <div class="section" style="margin-top:36px;">
+      <h2><span class="num">i</span> Ressources disponibles</h2>
+      <div class="card-grid">
+
+        <a class="card" href="pages/cobit.html">
+          <div class="card-top"><span class="card-code">GOV</span></div>
+          <h3>COBIT 2019</h3>
+          <p>Cadre de gouvernance et de management de l'IT — 5 principes, 40 objectifs répartis en domaines EDM / APO / BAI / DSS / MEA.</p>
+        </a>
+
+        <a class="card" href="pages/iso27001.html">
+          <div class="card-top"><span class="card-code">SEC</span></div>
+          <h3>ISO/IEC 27001</h3>
+          <p>Système de management de la sécurité de l'information (SMSI), cycle PDCA et 93 mesures de l'Annexe A.</p>
+        </a>
+
+        <a class="card" href="pages/capm.html">
+          <div class="card-top"><span class="card-code">PM</span></div>
+          <h3>CAPM — PMI</h3>
+          <p>Fondamentaux du PMBOK : 5 groupes de processus et 10 domaines de connaissance pour piloter un projet.</p>
+        </a>
+
+        <a class="card" href="pages/prince2.html">
+          <div class="card-top"><span class="card-code">PM</span></div>
+          <h3>PRINCE2</h3>
+          <p>Méthode structurée par processus : 7 principes, 7 thèmes, 7 processus, du mandat au bilan de projet.</p>
+        </a>
+
+        <a class="card" href="pages/ebios-rm.html">
+          <div class="card-top"><span class="card-code">RISK</span></div>
+          <h3>EBIOS Risk Manager</h3>
+          <p>Méthode ANSSI d'appréciation des risques cyber en 5 ateliers, du cadrage aux scénarios opérationnels.</p>
+        </a>
+
+        <a class="card" href="pages/mitre-attack.html">
+          <div class="card-top"><span class="card-code">CTI</span></div>
+          <h3>MITRE ATT&amp;CK</h3>
+          <p>Matrice des tactiques et techniques d'attaquants, utilisée pour la détection, la threat intelligence et le red teaming.</p>
+        </a>
+
+      </div>
+    </div>
+  </main>
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
