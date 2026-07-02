@@ -6,6 +6,8 @@ COBIT 2019, ISO/IEC 27001, CAPM (PMI), PRINCE2, EBIOS Risk Manager et MITRE ATT&
 Chaque fiche présente une vue d'ensemble, un schéma SVG du référentiel et une méthode pas-à-pas
 pour l'appliquer.
 
+### 🔗 [Voir le site en ligne](https://cabaaji.github.io/secframe/)
+
 ## Ouvrir le site en local
 
 Aucune dépendance n'est nécessaire : c'est du HTML/CSS/JS pur.
